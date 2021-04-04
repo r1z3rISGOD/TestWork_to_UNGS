@@ -1,0 +1,269 @@
+.data_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login_form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 300px;
+}
+.login_input {
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    outline: 5px;
+    text-align: center;
+    border: 2px solid #005fae;
+    outline: none;
+}
+
+.login_btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+.Units_available {
+    height: 35px;
+    width: 120px;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    bottom: 265px;
+    right: 510px;
+}
+
+.Units {
+    display: flex;
+    width: 1200px;
+    min-height: 170px;
+    justify-content: space-evenly;
+    padding: 0;
+    list-style-type: none;
+    border: 2px solid #005fae;
+    align-items: center;
+}
+
+.Units_item:last-child {
+    margin-right: 0px;
+}
+
+.Units_item {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.AddBtn {
+    position: relative;
+    left: 500px;
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+.Units_item_abt {
+    text-decoration: none;
+}
+
+.Units_item_img {
+    width: 100px;
+    height: 100px;
+}
+
+.AbtNodeZone {
+    margin-top: 30px;
+    background-color: rgba(160, 160, 160, 0.4);
+    width: 1000px;
+    height: 700px;
+}
+
+.AbtNodeZone_img {
+    position: relative;
+    top: 25px;
+    left: 125px;
+    width: 250px;
+    height: 180px;
+}
+
+.AbtNodeZone_text {
+position: relative;
+bottom: 110px;
+left: 450px;
+font-size: 70px;
+}
+
+.AbtNodeZone_status {
+display: flex;
+align-items: center;
+position: relative;
+left: 400px;
+bottom: 50px;
+}
+
+.AbtNodeZone_status_active {
+    height: 50px;
+    width: 50px;
+    margin-left: 30px;
+}
+
+.AbtNodeZone_address {
+    position: relative;
+    left: 355px;
+    bottom: 50px
+}
+
+.AbtNodeZone_address_input {
+    margin-left: 30px;
+    border-radius: 30px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    outline: none;
+}
+
+.AbtNodeZone_more {
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    left: 400px;
+    top: 50px;
+}
+
+.NewNode {
+    margin-top: 30px;
+    background-color: rgba(160, 160, 160, 0.4);
+    width: 1000px;
+    height: 700px;
+}
+
+.NewNode_text {
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+.NewNode_dropdown_select {
+    margin-left: 23px;
+    border-radius: 35px;
+    width: 250px;
+    height: 35px;
+    border: 2px solid #005fae;
+    outline: none;
+}
+
+.NewNode_address_input {
+    margin-left: 27px;
+    border-radius: 35px;
+    width: 250px;
+    height: 35px;
+    border: 2px solid #005fae;
+    outline: none;
+}
+
+.NewNode_type {
+    top: 100px;
+    position: relative;
+    left: 425px;
+}
+
+.NewNode_name {
+    top: 100px;
+    position: relative;
+    left: 343px;
+}
+
+.NewNode_address {
+    top: 100px;
+    position: relative;
+    left: 410px;
+}
+
+.NewNode_add {
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    left: 400px;
+    top: 200px;
+}
+
+.Container {
+    display: unset;
+    flex-direction: column;
+    align-items: unset;
+    width: 100vw;
+    position: relative;
+    left: 30px;
+}
+
+.Container li {
+    list-style-type: none;
+}
+
+.NodeTree {
+    background-image : url(./Tree/i.gif);
+    background-position : top left;
+    background-repeat : repeat-y;
+    zoom: 1;
+    margin-left: -60px;
+}
+
+.IsRoot {
+    margin-left: 0;
+}
+
+.IsLast {
+    background-image: url(./Tree/i_half.gif);
+    background-repeat : no-repeat;
+}
+ 
+.ExpandOpen .Expand {
+    background-image: url(./Tree/minus.gif);
+}
+ 
+
+.ExpandClosed .Expand {
+    background-image: url(./Tree/plus.png);
+}
+
+.ExpandLeaf .Expand {
+    background-image: url(./Tree/leaf1.gif);
+}
+
+.Content {
+    min-height: 18px;
+    margin-left:18px;
+    color:rgb(0, 199, 0);
+}
+
+* html  .Content {
+    height: 18px; 
+}
+
+.Expand {
+    width: 18px;
+    height: 18px;
+    float: left;
+}
+
+
+
+.ExpandOpen .Container {
+	display: block;
+}
+
+.ExpandClosed .Container {
+	display: none;
+}
+
+.ExpandOpen .Expand, .ExpandClosed .Expand {
+	cursor: pointer;
+}
+.ExpandLeaf .Expand {
+	cursor: auto;
+}
